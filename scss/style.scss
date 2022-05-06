@@ -12,10 +12,13 @@
 	margin: 0;
 	border: 0;
 	box-sizing: border-box;
+	
 }
 a{
 	text-decoration: none;
 }
+a:visited {
+	color: #274C5B; }
 ul,
 ol,
 li{
@@ -33,11 +36,11 @@ h6{
 	font-weight: inherit;
 	font-size: inherit;
 }
-body{
+html,body{
 	height: 100%;	
 	line-height: 1;
 	font-size: 16px;
-	color: #000;
+	color: #274C5B;
 	font-family: 'Roboto';
 	background : #fafafa;
 }
@@ -66,8 +69,102 @@ body{
 }
 /*____________________Header________________*/
 
+.header {
+	max-height: 152px;
+	padding: 20px 0px;
 
+		&__container {
+			display: flex;
+			justify-content:space-between;
+			align-items:center;	
+			padding: 40px 15px;
+			height: 72px;			
+		}
 
+		&__logo {
+		}
+
+		&__nav {
+			margin-left: -60px;
+			
+		}
+
+		&__cart {
+		}
+
+		
+}
+
+.logo {
+
+		&__link {
+		}
+
+		&__img {
+		}
+}
+
+.nav {
+
+		&__rov {
+			display: flex;
+			
+		}
+
+		&__item {	
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 32px;
+	letter-spacing: 0.36px;
+			
+		}
+
+		&__link {
+			color: #7EB693
+		}
+		&__link:hover {
+			color: #7EB693
+		}
+		&__item:not(:last-child){
+			margin: 0 40px 0 0;
+		}
+		&__item:last-child{
+			margin: 0  0 0 20px;
+		}
+}
+.header {
+
+	&__cart {
+	}
+}
+.cart {
+
+	&__rov {
+	}
+
+	&__img {
+	}
+
+	&__text {
+	}
+
+	&__counter {
+	}
+}
+.ibg {
+}
 
 
 /*______________PAGES______________________*/
+.pages {
+	flex: 1 1 auto ;
+}
+
+/*______________Podval______________________*/
+.footer {
+}
+
+
+
+

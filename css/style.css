@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: #274C5B;
+}
+
 ul,
 ol,
 li {
@@ -35,11 +39,11 @@ h6 {
   font-size: inherit;
 }
 
-body {
+html, body {
   height: 100%;
   line-height: 1;
   font-size: 16px;
-  color: #000;
+  color: #274C5B;
   font-family: 'Roboto';
   background: #fafafa;
 }
@@ -79,5 +83,65 @@ body {
 }
 
 /*____________________Header________________*/
+.header {
+  max-height: 152px;
+  padding: 20px 0px;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 15px;
+  height: 72px;
+}
+
+.header__nav {
+  margin-left: -60px;
+}
+
+.nav__rov {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+}
+
+.nav__link {
+  color: #7EB693;
+}
+
+.nav__link:hover {
+  color: #7EB693;
+}
+
+.nav__item:not(:last-child) {
+  margin: 0 40px 0 0;
+}
+
+.nav__item:last-child {
+  margin: 0  0 0 20px;
+}
+
 /*______________PAGES______________________*/
+.pages {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+/*______________Podval______________________*/
 /*# sourceMappingURL=style.css.map */
