@@ -106,7 +106,9 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0 0 -60px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .nav__item {
@@ -136,12 +138,11 @@ html, body {
 .cart {
   border: 1px solid #D4D4D4;
   border-radius: 33px;
-  max-width: 159px;
-  max-height: 70px;
 }
 
 .cart__rov {
-  margin: 10px;
+  max-height: 70px;
+  max-width: 159px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,22 +153,12 @@ html, body {
           align-items: center;
 }
 
-.cart__text {
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 29px;
-  letter-spacing: 0.36px;
-  color: #274C5B;
+.cart__img {
+  padding: 7px 10px;
 }
 
 .cart__counter {
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 169%;
-  letter-spacing: 0.36px;
-  color: #274C5B;
+  padding: 7px 30px 7px 10px;
 }
 
 /*______________PAGES______________________*/
