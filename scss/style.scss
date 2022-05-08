@@ -73,24 +73,26 @@ html,body{
 	max-height: 152px;
 	padding: 20px 0px;
 
-		&__container {
-			display: flex;
-			justify-content:space-between;
+		&__container {			
 			align-items:center;	
-			padding: 40px 15px;
-			height: 72px;			
+			padding:  15px;
+			height: 72px;
+			display: grid;	
+			grid-template-columns:minmax(200px,300px) minmax(365px,600px)  auto ;	
 		}
 
 		&__logo {
+			justify-self: start;
+
+				}
+
+		&__nav {		
 		}
 
-		&__nav {			
+		&__cart {	
+			justify-self: end;	
+			
 		}
-
-		&__cart {
-		}
-
-		
 }
 
 .logo {
@@ -118,34 +120,35 @@ html,body{
 			
 		}
 
-		&__link {
-			color: #7EB693
-		}
-		&__link:hover {
-			color: #7EB693
-		}
-		&__item:not(:last-child){
-			margin: 0 40px 0 0;
-		}
-		&__item:last-child{
-			margin: 0  0 0 20px;
-		}
+	&__link {
+		color: #7EB693
+	}
+	&__link:hover {
+		color: #7EB693
+	}
+	&__item:not(:last-child){
+		margin: 0 40px 0 0;
+	}
+	&__item:last-child{
+		margin: 0  0 0 20px;
+	}
 }
 
 .cart {
-	border: 1px solid #D4D4D4;
-   border-radius: 33px;
+	
 
 	&__rov {
-
-		   max-height: 70px ;
-			max-width: 159px;
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-				}
+		border: 1px solid #D4D4D4;   
+		border-radius: 33px;
+		max-height: 70px ;
+		max-width: 159px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+			}
 		
-	&__img {  padding: 7px 10px;
+	&__img {  
+		padding: 7px 10px;
 	}
 	&__text {	
 	}
