@@ -159,9 +159,42 @@ html,body{
 
 
 /*______________PAGES______________________*/
-.pages {
+.page {
 	flex: 1 1 auto ;
+
+	&__welcome {
+	}
 }
+/*______________WELCOME ______________________*/
+
+.welcome {
+
+	&__container {
+	}
+
+	&__rou {
+	}
+
+	&__text {
+	}
+
+	&__title {
+	}
+
+	&__buttom {
+	}
+}
+
+.buttom-welcome {
+
+	&__text {
+	}
+
+	&__arrou {
+	}
+}
+
+
 
 /*______________Podval______________________*/
 .footer {
