@@ -98,6 +98,7 @@ html, body {
   display: grid;
   -ms-grid-columns: minmax(200px, 300px) minmax(365px, 600px) auto;
       grid-template-columns: minmax(200px, 300px) minmax(365px, 600px) auto;
+  padding-bottom: 85px;
 }
 
 .header__logo {
@@ -173,6 +174,66 @@ html, body {
           flex: 1 1 auto;
 }
 
+.page__welcome {
+  width: 100%;
+  background: url(../img/Welcome/BackGround.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*______________WELCOME ______________________*/
+.welcome__rou {
+  padding: 225px 15px 285px 15px;
+  max-width: 525px;
+}
+
+.welcome__text {
+  font-family: 'Yellowtail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 180%;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #7EB693;
+  padding: 15px 0;
+}
+
+.welcome__title {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 125%;
+  letter-spacing: 0.36px;
+}
+
+.welcome__buttom {
+  margin-top: 35px;
+  max-width: 219px;
+  max-height: 82px;
+}
+
+.buttom {
+  padding: 25px 0px;
+  display: block;
+  background: #EFD372;
+  border: 1px solid #EFD372;
+  border-radius: 16px;
+}
+
+.buttom__text {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 168%;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #274C5B;
+  padding-left: 20px;
+}
+
+.buttom__arrou {
+  padding-left: 20px;
+}
+
 /*______________Podval______________________*/
 /*# sourceMappingURL=style.css.map */

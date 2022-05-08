@@ -79,6 +79,7 @@ html,body{
 			height: 72px;
 			display: grid;	
 			grid-template-columns:minmax(200px,300px) minmax(365px,600px)  auto ;	
+			padding-bottom:85px ;
 		}
 
 		&__logo {
@@ -163,34 +164,77 @@ html,body{
 	flex: 1 1 auto ;
 
 	&__welcome {
-	}
+		width: 100%;
+		background: url(../img/Welcome/BackGround.png);
+	
+     background-repeat: no-repeat;
+     background-size: cover;
+		
+}
 }
 /*______________WELCOME ______________________*/
 
 .welcome {
+	
 
 	&__container {
 	}
 
 	&__rou {
+		padding:225px 15px 285px 15px ;
+		max-width: 525px;
+
 	}
 
 	&__text {
+		font-family:'Yellowtail';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 180%;		
+		letter-spacing: 0.36px;
+		text-transform: capitalize;		
+		color: #7EB693;
+		padding: 15px 0;
 	}
 
-	&__title {
+	&__title {		
+		font-weight: 700;
+		font-size: 70px;
+		line-height: 125%;
+		letter-spacing: 0.36px;			
 	}
 
 	&__buttom {
+		margin-top: 35px; 	
+		max-width: 219px;	
+		max-height: 82px;
+
 	}
 }
 
-.buttom-welcome {
+.buttom {
+	padding:25px 0px;
+	display: block;
+	background: #EFD372;
+	border: 1px solid #EFD372;
+	border-radius: 16px;
+	
+
 
 	&__text {
+		font-family: 'Roboto';	
+		font-weight: 400;
+		font-size: 19px;
+		line-height: 168%;		
+		letter-spacing: 0.36px;
+		text-transform: capitalize;		
+		color: #274C5B;
+		padding-left: 20px;		
 	}
 
 	&__arrou {
+		padding-left: 20px;
 	}
 }
 
