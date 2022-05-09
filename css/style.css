@@ -235,5 +235,24 @@ html, body {
   padding-left: 20px;
 }
 
+/*___________________PEKLAMA_______________*/
+.advertisi__conteiner {
+  max-width: 1380px;
+}
+
+.advertisi__rou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advertisi__colums_banan {
+  background: url("../img/Advertisi/banan.png");
+}
+
+.advertisi__colums_aprikot {
+  background: url("../img/Advertisi/aprikot.png");
+}
+
 /*______________Podval______________________*/
 /*# sourceMappingURL=style.css.map */

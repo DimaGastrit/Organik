@@ -162,15 +162,15 @@ html,body{
 /*______________PAGES______________________*/
 .page {
 	flex: 1 1 auto ;
-
-	&__welcome {
+		&__welcome {
 		width: 100%;
-		background: url(../img/Welcome/BackGround.png);
-	
-     background-repeat: no-repeat;
-     background-size: cover;
+		background: url(../img/Welcome/BackGround.png);	
+   	background-repeat: no-repeat;
+   	background-size: cover;		
+	}
+		&__advertisi {
 		
-}
+	}
 }
 /*______________WELCOME ______________________*/
 
@@ -238,6 +238,39 @@ html,body{
 	}
 }
 
+/*___________________PEKLAMA_______________*/
+
+
+.advertisi {
+
+	&__conteiner {
+		max-width: 1380px;
+	}
+
+	&__rou {
+		display: flex;
+	}
+
+	&__colums {
+
+		&_banan {
+			background: url("../img/Advertisi/banan.png");
+		}
+
+		&_aprikot {
+			background: url("../img/Advertisi/aprikot.png");
+		}
+	}
+
+	&__texts {
+	}
+
+	&__title {
+	}
+
+	&__text {
+	}
+}
 
 
 /*______________Podval______________________*/
