@@ -244,21 +244,34 @@ html,body{
 .advertisi {
 
 	&__conteiner {
-		max-width: 1380px;
+		
 	}
 
 	&__rou {
-		display: flex;
+		margin: 140px 20px;
+		display: flex;		
+		justify-content: space-between;
+		
+		
+		
+		
+		
 	}
 
-	&__colums {
+	&__colums {		
+		box-sizing: border-box;
+		padding: 188px 300px;
+		
 
-		&_banan {
-			background: url("../img/Advertisi/banan.png");
+
+		&_banan {	
+
+			background: url("../img/Advertisi/banan.png") 0 0 /  contain no-repeat;  
+			
 		}
 
-		&_aprikot {
-			background: url("../img/Advertisi/aprikot.png");
+		&_aprikot {			
+			background: url("../img/Advertisi/aprikot.png") 0 0 /  contain no-repeat;			
 		}
 	}
 

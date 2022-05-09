@@ -236,22 +236,28 @@ html, body {
 }
 
 /*___________________PEKLAMA_______________*/
-.advertisi__conteiner {
-  max-width: 1380px;
-}
-
 .advertisi__rou {
+  margin: 140px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advertisi__colums {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 188px 300px;
 }
 
 .advertisi__colums_banan {
-  background: url("../img/Advertisi/banan.png");
+  background: url("../img/Advertisi/banan.png") 0 0/contain no-repeat;
 }
 
 .advertisi__colums_aprikot {
-  background: url("../img/Advertisi/aprikot.png");
+  background: url("../img/Advertisi/aprikot.png") 0 0/contain no-repeat;
 }
 
 /*______________Podval______________________*/
