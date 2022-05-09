@@ -416,6 +416,7 @@ body._lock{
 
 	&__container {
 
+<<<<<<< HEAD
 	}
 
 	&__title {		
@@ -520,6 +521,38 @@ body._lock{
 		letter-spacing: 0.36px;		
 		color: #274C5B;
 
+=======
+	&__conteiner {
+		
+	}
+
+	&__rou {
+		margin: 140px 20px;
+		display: flex;		
+		justify-content: space-between;
+		
+		
+		
+		
+		
+	}
+
+	&__colums {		
+		box-sizing: border-box;
+		padding: 188px 300px;
+		
+
+
+		&_banan {	
+
+			background: url("../img/Advertisi/banan.png") 0 0 /  contain no-repeat;  
+			
+		}
+
+		&_aprikot {			
+			background: url("../img/Advertisi/aprikot.png") 0 0 /  contain no-repeat;			
+		}
+>>>>>>> 6ec97d3 (реклама)
 	}
 
 	&__start {

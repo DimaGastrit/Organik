@@ -319,6 +319,7 @@ body._lock {
 
 /*___________________PEKLAMA_______________*/
 .advertisi__rou {
+<<<<<<< HEAD
   margin: 8% 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -429,11 +430,24 @@ body._lock {
 }
 
 .artik__rou {
+=======
+  margin: 140px 20px;
+>>>>>>> 6ec97d3 (реклама)
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
+.advertisi__colums {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 188px 300px;
+}
+
+<<<<<<< HEAD
 .artik__rou-img {
   float: left;
 }
@@ -1143,6 +1157,14 @@ body._lock {
   background: url(../img/Sab/ARROU.svg) 150px 27px no-repeat;
   background-color: #274C5B;
   padding-right: 35px;
+=======
+.advertisi__colums_banan {
+  background: url("../img/Advertisi/banan.png") 0 0/contain no-repeat;
+}
+
+.advertisi__colums_aprikot {
+  background: url("../img/Advertisi/aprikot.png") 0 0/contain no-repeat;
+>>>>>>> 6ec97d3 (реклама)
 }
 
 /*______________Podval______________________*/
