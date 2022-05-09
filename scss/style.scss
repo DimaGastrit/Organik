@@ -1,9 +1,5 @@
 /*_______________FONTS____________________*/
-
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Yellowtail&display=swap');
-
-
 /*_______________NOOL_STYLE____________________*/
 *,
 *::before,
@@ -11,10 +7,8 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
-	box-sizing: border-box;
-	
+	box-sizing: border-box;	
 }
-
 a{text-decoration: none;
 }
 ul,
@@ -69,7 +63,6 @@ body._lock{
 	object-fit:cover;
 }
 /*____________________Header________________*/
-
 .header {	
 		padding-top: 15px;	
 	    position: fixed;
@@ -79,7 +72,6 @@ body._lock{
 		 z-index: 125;
 		 background-color:#ffffff;
 		 height: 100px;
-
 		&__container {	
 			max-width: 1200px;
 			margin: 0 auto;			
@@ -87,8 +79,7 @@ body._lock{
 			padding: 0px 30px ;
 			align-items: center;
 			justify-content: space-between;
-			min-height: 70px;
-		
+			min-height: 70px;		
 		} 
 		&__logo{	
 			width: 200px;
@@ -109,7 +100,6 @@ body._lock{
 		}
 }
 .nav {
-
 	padding: 0 15px;
 	  	&__icon{
 		display: none;
@@ -141,7 +131,6 @@ body._lock{
 	}
 }
 .cart {	
-
 	&__rov {
 		border: 1px solid #D4D4D4;   
 		border-radius: 33px;
@@ -150,8 +139,7 @@ body._lock{
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-			}
-		
+	}		
 	&__img {  
 		padding: 7px 10px;
 	}
@@ -161,30 +149,23 @@ body._lock{
 		padding: 7px 30px 7px 10px;		
 	}
 }
-
-
 /*______________PAGES______________________*/
 .page {
 	flex: 1 1 auto ;
-
-		&__welcome {		
-					
+		&__welcome {						
 	}
 		&__advertisi{
-
 	}
 		&__about {
 			padding-top: 65px;	
 		}
-
 		&__organic {
 		}
 		&__testimonial {
 		}
 		&__offer {
 		}
-		&__eccofrendli {
-			
+		&__eccofrendli {			
 		}
 		&__food {
 		}
@@ -194,7 +175,6 @@ body._lock{
 		}
 }
 /*______________TITLE ______________________*/
-
 .title {
 	&__title {
 		font-family: 'Yellowtail';
@@ -204,9 +184,7 @@ body._lock{
 		line-height: 180%;
 		letter-spacing: 0.36px;
 		text-transform: capitalize;
-		color: #7EB693;
-
-		
+		color: #7EB693;		
 	}	&__subtitle {
 					
 		font-family: 'Roboto';
@@ -296,7 +274,6 @@ body._lock{
 		letter-spacing: 0.36px;	
 		text-transform: none;				
 	}
-
 	&__button {
 		display: block;
 		margin-top: 35px; 
