@@ -528,29 +528,32 @@ body._lock{
 
 	&__rou {
 		margin: 140px 20px;
-		display: flex;		
-		justify-content: space-between;
-		
-		
-		
-		
+		display: flex;				
+	   width: 100%;
 		
 	}
 
-	&__colums {		
-		box-sizing: border-box;
-		padding: 188px 300px;
+	&__colums {	
+		width:665px ;
+		height: 378px;
+		flex:1 1 auto ;	
 		
-
-
 		&_banan {	
-
-			background: url("../img/Advertisi/banan.png") 0 0 /  contain no-repeat;  
+			
+			background: url("../img/Advertisi/banan.png") 0 0 /  contain no-repeat; 
+					
 			
 		}
 
-		&_aprikot {			
-			background: url("../img/Advertisi/aprikot.png") 0 0 /  contain no-repeat;			
+		&_aprikot {		
+			width:665px ;
+			height: 378px;
+			background: url("../img/Advertisi/aprikot.png") left/  contain no-repeat;	
+			flex:1 1 auto ;
+				
+		
+
+				
 		}
 >>>>>>> 6ec97d3 (реклама)
 	}
