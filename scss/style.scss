@@ -52,7 +52,7 @@ html,body{
 	flex-direction:column;
 }
 ._container{
-	padding: 0 15px;
+	padding: 0 30px;
 	box-sizing: content-box;
 	max-width: 1380px;
 	margin: 0px auto;
@@ -69,44 +69,33 @@ html,body{
 }
 /*____________________Header________________*/
 
-.header {
-	max-height: 152px;
-	padding: 20px 0px;
+.header {	
+	    max-height: 152px;	
 
-		&__container {			
-			align-items:center;	
-			padding:  15px;
+		&__container {	
+			margin-top:40px;			
+			align-items:center;			
 			height: 72px;
 			display: grid;	
-			grid-template-columns:minmax(200px,300px) minmax(365px,600px)  auto ;	
-			padding-bottom:85px ;
+			grid-template-columns:minmax(200px,300px) minmax(365px,600px)  auto ;				
 		}
 
 		&__logo {
 			justify-self: start;
-
 				}
-
-		&__nav {		
+		&__nav {	
 		}
-
 		&__cart {	
-			justify-self: end;	
-			
+			justify-self: end;				
 		}
 }
-
 .logo {
-
 		&__link {
 		}
-
 		&__img {
 		}
 }
-
 .nav {
-
 		&__rov {
 			display: flex;
 			justify-content: flex-start;			
@@ -117,10 +106,8 @@ html,body{
 	font-weight: 400;
 	font-size: 19px;
 	line-height: 32px;
-	letter-spacing: 0.36px;
-			
+	letter-spacing: 0.36px;			
 		}
-
 	&__link {
 		color: #7EB693
 	}
@@ -162,14 +149,16 @@ html,body{
 /*______________PAGES______________________*/
 .page {
 	flex: 1 1 auto ;
+
 		&__welcome {
-		width: 100%;
-		background: url(../img/Welcome/BackGround.png);	
-   	background-repeat: no-repeat;
-   	background-size: cover;		
+		margin-top:40px;
+		max-width: 100%;
+		background: url("../img/Welcome/BackGround.png") 0 0/ 100% auto  no-repeat;		
+   		
 	}
-		&__advertisi {
-		
+		&__advertisi {		
+	}
+	&__about {
 	}
 }
 /*______________WELCOME ______________________*/
@@ -206,35 +195,38 @@ html,body{
 	}
 
 	&__buttom {
-		margin-top: 35px; 	
-		max-width: 219px;	
-		max-height: 82px;
-
+		margin-top: 35px; 
 	}
 }
 
 .buttom {
+	max-width: 300px;	
+	max-height: 82px;
 	padding:25px 0px;
-	display: block;
-	background: #EFD372;
-	border: 1px solid #EFD372;
+	display:inline-block;
 	border-radius: 16px;
-	
 
-
-	&__text {
+	&_yllou{
+		background: #EFD372;
+		border: 1px solid #EFD372;
+		color: #274C5B;
+	}
+	&_grin{
+		color: #FFFFFF;
+		background: #274C5B;
+      border: 1px solid #274C5B;
+	}
+	&__text {		
 		font-family: 'Roboto';	
 		font-weight: 400;
 		font-size: 19px;
 		line-height: 168%;		
 		letter-spacing: 0.36px;
 		text-transform: capitalize;		
-		color: #274C5B;
-		padding-left: 20px;		
-	}
-
-	&__arrou {
 		padding-left: 20px;
+		}
+	&__arrou {
+		padding:0 9px  0 20px;
 	}
 }
 
@@ -248,45 +240,132 @@ html,body{
 	}
 
 	&__rou {
-		margin: 140px 20px;
-		display: flex;				
+		margin: 140px 0;
+		display: flex;		
 	   width: 100%;
+		justify-content: space-between;
+		
 		
 	}
 
-	&__colums {	
+	&__colums {			
 		width:665px ;
-		height: 378px;
-		flex:1 1 auto ;	
-		
+		height: 378px;		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+
 		&_banan {	
-			
-			background: url("../img/Advertisi/banan.png") 0 0 /  contain no-repeat; 
-					
-			
+			color: #FFFFFF;			
+			background: url("../img/Advertisi/banan.png") 0 0/ contain no-repeat; 			
 		}
-
-		&_aprikot {		
-			width:665px ;
-			height: 378px;
-			background: url("../img/Advertisi/aprikot.png") left/  contain no-repeat;	
-			flex:1 1 auto ;
-				
-		
-
-				
+		&_aprikot {			
+			background: url("../img/Advertisi/aprikot.png") 0 0/ contain   no-repeat;				
 		}
 	}
 
 	&__texts {
+		padding-left: 53px;
+		max-width: 320px;		
 	}
 
 	&__title {
+		font-family: 'Yellowtail';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 180%;		
+		letter-spacing: 0.36px;		
+		
 	}
 
 	&__text {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 130%;
+		letter-spacing: 0.36px;
 	}
 }
+/*______________about ass______________________*/
+
+
+.about {
+
+	&__conteiner {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__colum-img {
+		padding: 0 30px;
+	}
+
+	&__img{
+		
+	}
+
+	&__colum-texts {
+		max-width: 675px;
+	}
+
+	&__colum-text-title {
+	}
+
+	&__colum-text-rous {
+	}
+
+	&__colum-text-rou {
+	}
+
+	&__colum-text {
+	}
+
+	&__buttom {
+	}
+}
+
+.title {
+
+	&__title {
+		font-family: 'Yellowtail';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 180%;
+		letter-spacing: 0.36px;
+		text-transform: capitalize;
+		color: #7EB693;
+	}
+
+	&__subtitle {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 45px;
+		line-height: 130%;
+		letter-spacing: 0.36px;
+		text-transform: capitalize;
+		color: #274C5B;
+	}
+
+	&__text {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 130%;		
+		letter-spacing: 0.36px;		
+		color: #525C60;	
+	}
+}
+
+
+
+
 
 
 /*______________Podval______________________*/
