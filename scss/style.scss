@@ -14,11 +14,11 @@
 	box-sizing: border-box;
 	
 }
-a{
-	text-decoration: none;
+
+a{text-decoration: none;
+
 }
-a:visited {
-	color: #274C5B; }
+
 ul,
 ol,
 li{
@@ -152,53 +152,50 @@ html,body{
 
 		&__welcome {
 		margin-top:40px;
-		max-width: 100%;
-		background: url("../img/Welcome/BackGround.png") 0 0/ 100% auto  no-repeat;		
-   		
+		max-width: 100%;				
 	}
-		&__advertisi {		
+		&__advertisi{
+
 	}
-	&__about {
+		&__about {
+			padding-top: 65px;
 	}
 }
-/*______________WELCOME ______________________*/
+/*______________TITLE ______________________*/
 
-.welcome {
-	
-
-	&__container {
-	}
-
-	&__rou {
-		padding:225px 15px 285px 15px ;
-		max-width: 525px;
-
-	}
-
-	&__text {
-		font-family:'Yellowtail';
+.title {
+	&__title {
+		font-family: 'Yellowtail';
 		font-style: normal;
 		font-weight: 400;
 		font-size: 36px;
-		line-height: 180%;		
+		line-height: 180%;
 		letter-spacing: 0.36px;
-		text-transform: capitalize;		
+		text-transform: capitalize;
 		color: #7EB693;
-		padding: 15px 0;
 	}
-
-	&__title {		
+	&__subtitle {
+		font-family: 'Roboto';
+		font-style: normal;
 		font-weight: 700;
-		font-size: 70px;
-		line-height: 125%;
-		letter-spacing: 0.36px;			
+		font-size: 45px;
+		line-height: 130%;
+		letter-spacing: 0.36px;
+		text-transform: capitalize;
+		color: #274C5B;
 	}
-
-	&__buttom {
-		margin-top: 35px; 
+	&__text {
+		max-width: 680px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 180%;
+		letter-spacing: 0.36px;
+		color: #525C60;	
 	}
 }
-
+/*_________________BUTTOMS__________*/
 .buttom {
 	max-width: 300px;	
 	max-height: 82px;
@@ -216,6 +213,11 @@ html,body{
 		background: #274C5B;
       border: 1px solid #274C5B;
 	}
+	&__grin a:visited {
+		color: #FFFFFF;
+
+
+	}
 	&__text {		
 		font-family: 'Roboto';	
 		font-weight: 400;
@@ -229,25 +231,50 @@ html,body{
 		padding:0 9px  0 20px;
 	}
 }
+/*_______WELCOME_____________________*/
 
-/*___________________PEKLAMA_______________*/
+.welcome {
 
-
-.advertisi {
-
-	&__conteiner {
-		
+	background: url("../img/Welcome/BackGround.png") 0 0/ 100% auto  no-repeat;   	
+	&__container {
+	}
+	&__rou {
+		padding:225px 15px 285px 15px ;
+		max-width: 525px;
+	}
+	&__text {
+		font-family:'Yellowtail';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 180%;		
+		letter-spacing: 0.36px;
+		text-transform: capitalize;		
+		color: #7EB693;
+		padding: 15px 0;
+	}
+	&__title {		
+		font-weight: 700;
+		font-size: 70px;
+		line-height: 125%;
+		letter-spacing: 0.36px;			
 	}
 
+	&__buttom {
+		margin-top: 35px; 
+	}
+}
+/*___________________PEKLAMA_______________*/
+
+.advertisi {
+	&__conteiner {		
+	}
 	&__rou {
 		margin: 140px 0;
 		display: flex;		
 	   width: 100%;
-		justify-content: space-between;
-		
-		
+		justify-content: space-between;		
 	}
-
 	&__colums {			
 		width:665px ;
 		height: 378px;		
@@ -255,8 +282,6 @@ html,body{
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
-
-
 		&_banan {	
 			color: #FFFFFF;			
 			background: url("../img/Advertisi/banan.png") 0 0/ contain no-repeat; 			
@@ -265,7 +290,6 @@ html,body{
 			background: url("../img/Advertisi/aprikot.png") 0 0/ contain   no-repeat;				
 		}
 	}
-
 	&__texts {
 		padding-left: 53px;
 		max-width: 320px;		
@@ -277,8 +301,7 @@ html,body{
 		font-weight: 400;
 		font-size: 36px;
 		line-height: 180%;		
-		letter-spacing: 0.36px;		
-		
+		letter-spacing: 0.36px;			
 	}
 
 	&__text {
@@ -291,81 +314,70 @@ html,body{
 	}
 }
 /*______________about ass______________________*/
-
-
 .about {
+		background: #F9F8F8;
 
 	&__conteiner {
 		display: flex;
 		justify-content: center;
 	}
-
-	&__colum-img {
-		padding: 0 30px;
+	&__img {		
+		padding: 0 20px;
 	}
 
-	&__img{
+	&__artik {
 		
-	}
-
-	&__colum-texts {
-		max-width: 675px;
-	}
-
-	&__colum-text-title {
-	}
-
-	&__colum-text-rous {
-	}
-
-	&__colum-text-rou {
-	}
-
-	&__colum-text {
-	}
-
+		}	
 	&__buttom {
+		margin-top: 50px;
 	}
 }
 
-.title {
+.artik {
 
-	&__title {
-		font-family: 'Yellowtail';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 36px;
-		line-height: 180%;
-		letter-spacing: 0.36px;
-		text-transform: capitalize;
-		color: #7EB693;
+	&__rous {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;		
+		max-width: 680px;		
+		height: 238px;
+	
+	}
+	&__rou {	
+			
+		display: flex;		
+
+	}
+	&__rou-img {
+		float: left;
+		
+	}
+	&__text {
+				
 	}
 
-	&__subtitle {
-		font-family: 'Roboto';
+	&__text-title {
+			font-family: 'Roboto';
 		font-style: normal;
-		font-weight: 700;
-		font-size: 45px;
-		line-height: 130%;
-		letter-spacing: 0.36px;
-		text-transform: capitalize;
+		font-weight: 400;
+		font-size: 25px;
+		line-height: 140%;		
+		letter-spacing: 0.36px;		
 		color: #274C5B;
 	}
 
-	&__text {
+	&__text-subtitle {
+		margin-top: 10px;
 		font-family: 'Open Sans';
 		font-style: normal;
 		font-weight: 400;
 		font-size: 18px;
-		line-height: 130%;		
+		line-height: 180%;	
 		letter-spacing: 0.36px;		
-		color: #525C60;	
+		color: #525C60;
 	}
 }
-
-
-
-
 
 
 /*______________Podval______________________*/

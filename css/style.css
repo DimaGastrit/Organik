@@ -15,10 +15,6 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: #274C5B;
-}
-
 ul,
 ol,
 li {
@@ -175,10 +171,90 @@ html, body {
 .page__welcome {
   margin-top: 40px;
   max-width: 100%;
+}
+
+.page__about {
+  padding-top: 65px;
+}
+
+/*______________TITLE ______________________*/
+.title__title {
+  font-family: 'Yellowtail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 180%;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #7EB693;
+}
+
+.title__subtitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 130%;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #274C5B;
+}
+
+.title__text {
+  max-width: 680px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+
+/*_________________BUTTOMS__________*/
+.buttom {
+  max-width: 300px;
+  max-height: 82px;
+  padding: 25px 0px;
+  display: inline-block;
+  border-radius: 16px;
+}
+
+.buttom_yllou {
+  background: #EFD372;
+  border: 1px solid #EFD372;
+  color: #274C5B;
+}
+
+.buttom_grin {
+  color: #FFFFFF;
+  background: #274C5B;
+  border: 1px solid #274C5B;
+}
+
+.buttom__grin a:visited {
+  color: #FFFFFF;
+}
+
+.buttom__text {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 168%;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  padding-left: 20px;
+}
+
+.buttom__arrou {
+  padding: 0 9px  0 20px;
+}
+
+/*_______WELCOME_____________________*/
+.welcome {
   background: url("../img/Welcome/BackGround.png") 0 0/100% auto no-repeat;
 }
 
-/*______________WELCOME ______________________*/
 .welcome__rou {
   padding: 225px 15px 285px 15px;
   max-width: 525px;
@@ -205,40 +281,6 @@ html, body {
 
 .welcome__buttom {
   margin-top: 35px;
-}
-
-.buttom {
-  max-width: 300px;
-  max-height: 82px;
-  padding: 25px 0px;
-  display: inline-block;
-  border-radius: 16px;
-}
-
-.buttom_yllou {
-  background: #EFD372;
-  border: 1px solid #EFD372;
-  color: #274C5B;
-}
-
-.buttom_grin {
-  color: #FFFFFF;
-  background: #274C5B;
-  border: 1px solid #274C5B;
-}
-
-.buttom__text {
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 168%;
-  letter-spacing: 0.36px;
-  text-transform: capitalize;
-  padding-left: 20px;
-}
-
-.buttom__arrou {
-  padding: 0 9px  0 20px;
 }
 
 /*___________________PEKLAMA_______________*/
@@ -304,6 +346,10 @@ html, body {
 }
 
 /*______________about ass______________________*/
+.about {
+  background: #F9F8F8;
+}
+
 .about__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,42 +359,57 @@ html, body {
           justify-content: center;
 }
 
-.about__colum-img {
-  padding: 0 30px;
+.about__img {
+  padding: 0 20px;
 }
 
-.about__colum-texts {
-  max-width: 675px;
+.about__buttom {
+  margin-top: 50px;
 }
 
-.title__title {
-  font-family: 'Yellowtail';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 180%;
-  letter-spacing: 0.36px;
-  text-transform: capitalize;
-  color: #7EB693;
+.artik__rous {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 680px;
+  height: 238px;
 }
 
-.title__subtitle {
+.artik__rou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.artik__rou-img {
+  float: left;
+}
+
+.artik__text-title {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 130%;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 140%;
   letter-spacing: 0.36px;
-  text-transform: capitalize;
   color: #274C5B;
 }
 
-.title__text {
+.artik__text-subtitle {
+  margin-top: 10px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 130%;
+  line-height: 180%;
   letter-spacing: 0.36px;
   color: #525C60;
 }
