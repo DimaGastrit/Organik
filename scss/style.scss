@@ -158,8 +158,11 @@ html,body{
 
 	}
 		&__about {
-			padding-top: 65px;
-	}
+			padding-top: 65px;	
+		}
+
+		&__organic {
+		}
 }
 /*______________TITLE ______________________*/
 
@@ -195,13 +198,16 @@ html,body{
 		color: #525C60;	
 	}
 }
-/*_________________BUTTOMS__________*/
-.buttom {
+/*_________________buttonS__________*/
+.button {
 	max-width: 300px;	
 	max-height: 82px;
 	padding:25px 0px;
 	display:inline-block;
 	border-radius: 16px;
+	&__white{
+
+	}
 
 	&_yllou{
 		background: #EFD372;
@@ -215,8 +221,6 @@ html,body{
 	}
 	&__grin a:visited {
 		color: #FFFFFF;
-
-
 	}
 	&__text {		
 		font-family: 'Roboto';	
@@ -260,7 +264,7 @@ html,body{
 		letter-spacing: 0.36px;			
 	}
 
-	&__buttom {
+	&__button {
 		margin-top: 35px; 
 	}
 }
@@ -316,6 +320,7 @@ html,body{
 /*______________about ass______________________*/
 .about {
 		background: #F9F8F8;
+		padding: 80px 0;
 
 	&__conteiner {
 		display: flex;
@@ -328,7 +333,7 @@ html,body{
 	&__artik {
 		
 		}	
-	&__buttom {
+	&__button {
 		margin-top: 50px;
 	}
 }
@@ -350,13 +355,10 @@ html,body{
 
 	}
 	&__rou-img {
-		float: left;
-		
+		float: left;		
 	}
-	&__text {
-				
+	&__text {				
 	}
-
 	&__text-title {
 			font-family: 'Roboto';
 		font-style: normal;
@@ -378,6 +380,166 @@ html,body{
 		color: #525C60;
 	}
 }
+
+/*_____________ORGANIK______________________*/
+
+.organic {
+	padding: 50px 0;
+
+	&__container {
+	}
+
+	&__title {		
+		max-width: 290px;
+		margin: 0 auto;
+		text-align: center;
+		}
+
+	&__galeri {
+		padding-top:50px ;
+	}
+}
+.galeri {
+
+	&__windows {		
+	}
+}
+.windows {	
+	display: inline-flex;
+	flex-direction: column;
+	max-width:447px;
+	max-height: 590px;
+	background: #F9F8F8;	
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 30px;
+
+	&__container{
+		display: inline-flex;
+		flex-direction: column;	
+		align-items: center;		
+		max-width: 387px;
+		max-height: 540px;
+		padding: 30px;
+	}
+
+	&__items {		
+	}
+
+	&__items-bottom {
+		margin-left: 30px;
+		align-self: start;
+		padding: 0 20px;
+		height: 37px;
+		background: #274C5B;
+		border-radius: 8px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 180%;
+		letter-spacing: 0.36px;
+		color: #FFFFFF;
+
+	}
+
+	&__items-img {
+		display: block;
+		overflow: hidden;
+		align-self: start;
+	}
+
+	&__items-description {
+		margin-left: 30px;
+		align-self: start;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 160%;
+		/* identical to box height, or 160% */
+		
+		letter-spacing: 0.36px;
+		
+		color: #274C5B;
+	}
+
+	&__prais {
+		align-self: start;
+		display: flex;
+		
+		
+		
+	}
+
+	&__old-prais {
+		float: left;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 191%;	
+		letter-spacing: 0.36px;
+		text-decoration-line: line-through;		
+		color: #B8B8B8;		
+	}
+
+	&__nev-prais {
+		margin-left: 10px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 180%;		
+		letter-spacing: 0.36px;		
+		color: #274C5B;
+	}
+
+	&__stars {
+		float: right;			
+		width: 90px;			
+		background: url("../img/Organik/star.svg") 0 0/   repeat-x ;
+	}
+}
+
+.start {
+	display: flex;
+	align-items: flex-end;
+	color: #FFA858;
+	font-size: 25px;
+	
+
+	&__items {
+		display: flex;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+	}
+
+	&_item {
+		flex: 0 0 20%;
+		height: 100%;
+		opacity: 0;
+	}
+
+	&__body {
+		margin:0 0 5px 20px ;
+		position: relative;
+		
+	}
+	&__body::before{
+		content: "★★★★★";
+		display: block;
+	}
+
+	&__aktiv {
+	}	
+
+	&__value {
+	}
+}
+
 
 
 /*______________Podval______________________*/

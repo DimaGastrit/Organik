@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*_______________FONTS____________________*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Yellowtail&display=swap");
 /*_______________NOOL_STYLE____________________*/
@@ -211,8 +212,8 @@ html, body {
   color: #525C60;
 }
 
-/*_________________BUTTOMS__________*/
-.buttom {
+/*_________________buttonS__________*/
+.button {
   max-width: 300px;
   max-height: 82px;
   padding: 25px 0px;
@@ -220,23 +221,23 @@ html, body {
   border-radius: 16px;
 }
 
-.buttom_yllou {
+.button_yllou {
   background: #EFD372;
   border: 1px solid #EFD372;
   color: #274C5B;
 }
 
-.buttom_grin {
+.button_grin {
   color: #FFFFFF;
   background: #274C5B;
   border: 1px solid #274C5B;
 }
 
-.buttom__grin a:visited {
+.button__grin a:visited {
   color: #FFFFFF;
 }
 
-.buttom__text {
+.button__text {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 19px;
@@ -246,7 +247,7 @@ html, body {
   padding-left: 20px;
 }
 
-.buttom__arrou {
+.button__arrou {
   padding: 0 9px  0 20px;
 }
 
@@ -279,7 +280,7 @@ html, body {
   letter-spacing: 0.36px;
 }
 
-.welcome__buttom {
+.welcome__button {
   margin-top: 35px;
 }
 
@@ -348,6 +349,7 @@ html, body {
 /*______________about ass______________________*/
 .about {
   background: #F9F8F8;
+  padding: 80px 0;
 }
 
 .about__conteiner {
@@ -363,7 +365,7 @@ html, body {
   padding: 0 20px;
 }
 
-.about__buttom {
+.about__button {
   margin-top: 50px;
 }
 
@@ -412,6 +414,172 @@ html, body {
   line-height: 180%;
   letter-spacing: 0.36px;
   color: #525C60;
+}
+
+/*_____________ORGANIK______________________*/
+.organic {
+  padding: 50px 0;
+}
+
+.organic__title {
+  max-width: 290px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.organic__galeri {
+  padding-top: 50px;
+}
+
+.windows {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 447px;
+  max-height: 590px;
+  background: #F9F8F8;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.windows__container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 387px;
+  max-height: 540px;
+  padding: 30px;
+}
+
+.windows__items-bottom {
+  margin-left: 30px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  padding: 0 20px;
+  height: 37px;
+  background: #274C5B;
+  border-radius: 8px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 180%;
+  letter-spacing: 0.36px;
+  color: #FFFFFF;
+}
+
+.windows__items-img {
+  display: block;
+  overflow: hidden;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.windows__items-description {
+  margin-left: 30px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  /* identical to box height, or 160% */
+  letter-spacing: 0.36px;
+  color: #274C5B;
+}
+
+.windows__prais {
+  -ms-flex-item-align: start;
+      align-self: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.windows__old-prais {
+  float: left;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 191%;
+  letter-spacing: 0.36px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #B8B8B8;
+}
+
+.windows__nev-prais {
+  margin-left: 10px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+}
+
+.windows__stars {
+  float: right;
+  width: 90px;
+  background: url("../img/Organik/star.svg") 0 0/repeat-x;
+}
+
+.start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #FFA858;
+  font-size: 25px;
+}
+
+.start__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.start_item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  height: 100%;
+  opacity: 0;
+}
+
+.start__body {
+  margin: 0 0 5px 20px;
+  position: relative;
+}
+
+.start__body::before {
+  content: "★★★★★";
+  display: block;
 }
 
 /*______________Podval______________________*/
