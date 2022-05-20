@@ -106,6 +106,17 @@ html, body {
       justify-self: end;
 }
 
+.header__nav {
+  margin-left: -180px;
+}
+
+.header__wraper {
+  display: inline-flexbox;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .nav__rov {
   display: -webkit-box;
   display: -ms-flexbox;
