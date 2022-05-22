@@ -418,6 +418,7 @@ html,body{
 	padding: 50px 0;
 
 	&__container {
+
 	}
 
 	&__title {		
@@ -427,40 +428,42 @@ html,body{
 		}
 
 	&__galeri {
-		padding-top:50px ;
+		margin-top:50px ;
 	}
 }
 .galeri {
+	display: grid ;
+	grid-template-columns:minmax(390px,450px) minmax(390px,450px)minmax(390px,450px) ;
+	justify-items: center;
+	gap: 30px 20px;	
 
 	&__windows {		
 	}
 }
-.windows {	
-	display: inline-flex;
-	flex-direction: column;
-	max-width:447px;
-	max-height: 590px;
+.windows {		
 	background: #F9F8F8;	
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 30px;
 
-	&__container{
-		display: inline-flex;
-		flex-direction: column;	
-		align-items: center;		
-		max-width: 387px;
-		max-height: 540px;
-		padding: 30px;
+	&__container{			
+		
+	}
+	&__items::after{
+		content: " ";	
+		display: block;	
+		width: 100%;
+  		border-bottom: 2px solid #D4D4D4;
+		margin: 0 auto;
+
+			}
+
+	&__items {	
+		margin: 30px;
+		
 	}
 
-	&__items {		
-	}
-
-	&__items-bottom {
-		margin-left: 30px;
-		align-self: start;
-		padding: 0 20px;
-		height: 37px;
+	&__items-bottom {			
+		padding: 5px 20px;		
 		background: #274C5B;
 		border-radius: 8px;
 		font-family: 'Open Sans';
@@ -470,40 +473,33 @@ html,body{
 		line-height: 180%;
 		letter-spacing: 0.36px;
 		color: #FFFFFF;
-
 	}
 
 	&__items-img {
-		display: block;
-		overflow: hidden;
-		align-self: start;
+		
+		
 	}
 
-	&__items-description {
-		margin-left: 30px;
-		align-self: start;
+	&__items-description {		
 		font-family: 'Roboto';
 		font-style: normal;
 		font-weight: 400;
 		font-size: 22px;
-		line-height: 160%;
-		/* identical to box height, or 160% */
+		line-height: 160%;		
+		letter-spacing: 0.36px;		
+		color: #274C5B;	
+	}
+	&__prais-contei{	
 		
-		letter-spacing: 0.36px;
-		
-		color: #274C5B;
+
 	}
 
-	&__prais {
-		align-self: start;
+	&__prais {	
+		margin: 0 30px;		
 		display: flex;
-		
-		
-		
+		width: 90%;			
 	}
-
-	&__old-prais {
-		float: left;
+	&__old-prais {		
 		font-family: 'Open Sans';
 		font-style: normal;
 		font-weight: 400;
@@ -514,8 +510,7 @@ html,body{
 		color: #B8B8B8;		
 	}
 
-	&__nev-prais {
-		margin-left: 10px;
+	&__nev-prais {		
 		font-family: 'Open Sans';
 		font-style: normal;
 		font-weight: 700;
@@ -525,27 +520,25 @@ html,body{
 		color: #274C5B;
 	}
 
-	&__stars {
-		float: right;			
-		width: 90px;			
-		background: url("../img/Organik/star.svg") 0 0/   repeat-x ;
+	&__start {
+		
 	}
 }
 
 .start {
-	display: flex;
-	align-items: flex-end;
+
 	color: #FFA858;
-	font-size: 25px;
+	font-size: 23px;
+
+
 	
 
-	&__items {
-		display: flex;
-		position: absolute;
+	&__items {		
 		top: 0;
 		left: 0;
 		height: 100%;
 		width: 100%;
+
 	}
 
 	&_item {
@@ -555,13 +548,13 @@ html,body{
 	}
 
 	&__body {
-		margin:0 0 5px 20px ;
-		position: relative;
+		margin:0 0 5px 20px ;		
 		
 	}
 	&__body::before{
 		content: "★★★★★";
-		display: block;
+		
+		
 	}
 
 	&__aktiv {
