@@ -446,7 +446,7 @@ html, body {
 }
 
 .windows__items {
-  margin: 30px 30px 0 30px;
+  margin: 30px;
 }
 
 .windows__items-bottom {
@@ -470,18 +470,14 @@ html, body {
   line-height: 160%;
   letter-spacing: 0.36px;
   color: #274C5B;
-  padding-bottom: 13px;
 }
 
 .windows__prais {
-  margin: 10px 30px 0 30px;
+  margin: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 87%;
+  width: 90%;
 }
 
 .windows__old-prais {
