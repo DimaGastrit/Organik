@@ -106,17 +106,6 @@ html, body {
       justify-self: end;
 }
 
-.header__nav {
-  margin-left: -180px;
-}
-
-.header__wraper {
-  display: inline-flexbox;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .nav__rov {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,16 +383,6 @@ html, body {
           justify-content: space-between;
   max-width: 680px;
   height: 238px;
-}
-
-.artik__rou {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.artik__rou-img {
-  float: left;
 }
 
 .artik__text-title {

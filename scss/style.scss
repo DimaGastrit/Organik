@@ -81,7 +81,6 @@ html,body{
 		}
 
 		&__logo {
-<<<<<<< Updated upstream
 			justify-self: start;
 				}
 		&__nav {	
@@ -89,26 +88,6 @@ html,body{
 		&__cart {	
 			justify-self: end;				
 		}
-=======
-			
-		}
-
-		&__nav {
-			margin-left: -180px;
-		
-			
-		}
-
-		&__cart {
-			
-		}
-		&__wraper{
-			display:  inline-flexbox;
-			justify-content:space-between ;
-
-		}
-		
->>>>>>> Stashed changes
 }
 .logo {
 		&__link {
@@ -358,16 +337,6 @@ html,body{
 		margin-top: 50px;
 	}
 }
-<<<<<<< Updated upstream
-=======
-.cart {
-	
-	
-	
-	&__rov {
-		border: 1px solid #D4D4D4;
-   border-radius: 33px;
->>>>>>> Stashed changes
 
 .artik {
 
@@ -379,16 +348,6 @@ html,body{
 		max-width: 680px;		
 		height: 238px;
 	
-	}
-	&__rou {	
-			
-		display: flex;		
-
-	}
-	&__rou-img {
-		float: left;		
-	}
-	&__text {				
 	}
 	&__text-title {
 			font-family: 'Roboto';
