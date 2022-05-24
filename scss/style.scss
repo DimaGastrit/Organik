@@ -109,10 +109,10 @@ html,body{
 	letter-spacing: 0.36px;			
 		}
 	&__link {
-		color: #7EB693
+		color: #274C5B;;
 	}
 	&__link:hover {
-		color: #7EB693
+		color: #7EB693;
 	}
 	&__item:not(:last-child){
 		margin: 0 40px 0 0;
@@ -163,6 +163,10 @@ html,body{
 
 		&__organic {
 		}
+		&__testimonial {
+		}
+		&__offer {
+		}
 }
 /*______________TITLE ______________________*/
 
@@ -186,6 +190,11 @@ html,body{
 		letter-spacing: 0.36px;
 		text-transform: capitalize;
 		color: #274C5B;
+
+		&_waet{
+			color: #FFFFFF;
+
+		}
 	}
 	&__text {
 		max-width: 680px;
@@ -357,8 +366,9 @@ html,body{
 	&__rou-img {
 		float: left;		
 	}
-	&__text {				
-	}
+	&__text {	
+		padding-left: 20px;
+		}
 	&__text-title {
 			font-family: 'Roboto';
 		font-style: normal;
@@ -384,7 +394,7 @@ html,body{
 /*_____________ORGANIK______________________*/
 
 .organic {
-	padding: 50px 0;
+	padding: 100px 0;
 
 	&__container {
 
@@ -532,6 +542,240 @@ html,body{
 	}	
 
 	&__value {
+	}
+}
+
+
+/*_____________________RESPONS_____________*/
+
+.testimonial {
+	background: url(../img/Testimor/CinaLimon.jpg) 0 0/  cover  no-repeat;   ;
+
+	&__container {
+		max-width: 1078px;
+		width: 100%;
+		box-sizing: content-box;	
+		margin: 0px auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	&__title {
+		text-align: center;
+		margin-top :130px ;
+		
+	}
+
+	&__response {
+		 
+		text-align: center;
+		margin-top: 57px;	
+			&::after{
+				content: " ";		
+				display: block;	
+				width: 100%;
+				  border-bottom: 2px solid #D4D4D4;
+				 margin: 0 auto;
+				 padding: 50px 0;
+			}	
+	}
+
+	&__circle {	
+		margin-top:85px; 
+		padding-bottom: 150px;
+		
+	}
+}
+
+.response {
+
+	&__profil {
+	}
+
+	&__text {		
+	
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 18px;
+line-height: 180%;
+letter-spacing: 0.36px;
+color: #525C60;
+max-width: 950px;
+		
+	}
+
+	&__name {		
+	}
+}
+.profil {
+	
+
+	&__foto {
+		
+	}
+
+	&__stars {
+		margin:18px 18px 0 0 ;
+		font-size: 30px;
+
+		 
+
+	}
+}
+/*
+.start {
+
+	&_item {
+	}
+
+	&__body {
+	}
+
+	&__aktiv {
+	}
+
+	&__items {
+	}
+}
+*/
+.name {
+	margin-top: 15px;
+
+	&__name {
+		font-family: 'Roboto';
+font-weight: 700;
+font-size: 26px;
+line-height: 130%;
+letter-spacing: 0.36px;
+
+	}
+
+	&__position {
+		
+		font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 193%;
+text-align: center;
+letter-spacing: 0.36px;
+color: #525C60;
+	}
+}
+.circle {
+	
+	&__rou {	
+		width: 100%;
+		display: flex;	
+		justify-content: space-between;
+
+	}
+
+	&__wrapper1 {
+		border: 6px solid #7EB693;
+		border-radius: 200px;
+	}
+
+	
+	&__items {
+		width: 200px;
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background: #F1F1F1;
+		border: 6px solid #FFFFFF;
+		border-radius: 200px;		
+	}
+
+	&__items-figures {
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 55px;
+text-align: center;
+letter-spacing: 0.36px;
+color: #274C5B;
+	}
+
+	&__items-texs {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 32px;
+text-align: center;
+letter-spacing: 0.36px;
+color: #274C5B;
+	}
+}
+/*____________________Offer_________________*/
+
+.offer {
+	background: #274C5B;
+
+	&__container{
+	padding: 140px 0;
+
+	}
+
+	&__rou {
+		
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__title {
+	}
+
+	&__windowsRou {
+		margin-top: 60px;
+		display: grid;
+		grid-template-columns: minmax(390px,450px) minmax(390px,450px) minmax(390px,450px);
+		gap: 20px;
+	}
+
+	&__windows {
+		
+	}
+	&__button{
+		align-self:flex-end;
+
+	}
+
+}
+
+
+
+.windows {
+
+	&__container {
+	}
+
+	&__items {
+	}
+
+	&__items-bottom {
+	}
+
+	&__items-img {
+	}
+
+	&__items-description {
+	}
+
+	&__prais {
+	}
+
+	&__old-prais {
+	}
+
+	&__nev-prais {
+	}
+
+	&__stars {
 	}
 }
 
