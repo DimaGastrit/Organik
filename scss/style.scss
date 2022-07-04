@@ -167,6 +167,15 @@ html,body{
 		}
 		&__offer {
 		}
+		&__eccofrendli {
+			
+		}
+		&__food {
+		}
+		&__nevs {
+		}
+		&__subscribe {
+		}
 }
 /*______________TITLE ______________________*/
 
@@ -213,9 +222,13 @@ html,body{
 	max-height: 82px;
 	padding:25px 0px;
 	display:inline-block;
-	border-radius: 16px;
-	&__white{
-
+	border-radius: 16px;	
+	&_white{
+		color: #274C5B;
+		background: #FFFFFF;
+		border: 1px solid #274C5B;
+		
+			
 	}
 
 	&_yllou{
@@ -243,6 +256,7 @@ html,body{
 	&__arrou {
 		padding:0 9px  0 20px;
 	}
+	
 }
 /*_______WELCOME_____________________*/
 
@@ -549,7 +563,7 @@ html,body{
 /*_____________________RESPONS_____________*/
 
 .testimonial {
-	background: url(../img/Testimor/CinaLimon.jpg) 0 0/  cover  no-repeat;   ;
+	background: url(../img/Testimor/CinaLimon.jpg) 0 0/  cover  no-repeat;   
 
 	&__container {
 		max-width: 1078px;
@@ -721,8 +735,7 @@ color: #274C5B;
 
 	}
 
-	&__rou {
-		
+	&__rou {		
 		display: flex;
 		justify-content: space-between;
 	}
@@ -742,13 +755,11 @@ color: #274C5B;
 	}
 	&__button{
 		align-self:flex-end;
-
 	}
-
 }
 
 
-
+/*_______+
 .windows {
 
 	&__container {
@@ -778,10 +789,345 @@ color: #274C5B;
 	&__stars {
 	}
 }
+*/
 
 
+/*___________________ECCO_______________________*/
+
+.eccofrendli {
+	background: #FFFFFF;
+
+	&__container {
+		max-width: 1440px;
+		width: 100%;		
+		display:flex;
+		margin: 0 auto;
+		justify-content: center	
+	
+		
+	}
+
+	&__leftSaid {
+	}
+
+	&__rightSaid {
+	}
+}
+.leftSaid {
+
+	&__img {
+		float: left;
+
+		z-index: 1;
+	}
+}
+
+.rightSaid {
+	max-height: 704px;
+
+	&__column {
+		position: relative;
+	
+		max-width: 720px;
+		max-height: 635px;
+		
+		height: 100%;
+		width: 100%;
+		margin: 39px 0px 39px -60px;
+		z-index: 40;
+		background: #FFFFFF;		
+		border-radius: 30px 0px 0px 30px;
+		padding-left :65px ;
+		}
+
+	&__title {
+		padding-top: 35px;
+	}
+
+	&__list {
+		padding-bottom: 45px;
+
+	}
+
+	&__list-title {	
+		padding-top: 9px;
+	font-family: 'Roboto';
+	font-weight: 700;
+font-size: 23px;
+line-height: 32px;
+letter-spacing: 0.36px;
+text-transform: capitalize;
+color: #274C5B;
+
+		&:first-child{
+			padding-top: 25px;}
+
+		
+	}
+	&__list-subtitle {
+		padding-top:4px ;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 32px;		
+		letter-spacing: 0.36px;		
+		color: #525C60;				
+	}
+}
+
+/*______________________FOOD____________________*/
+
+
+
+
+.food {
+	background: #EFF6F1;
+
+	&_colums {
+	}
+
+	&__container {	
+	box-sizing: content-box;
+	max-width: 1440px;
+	margin: 0px auto;
+	}
+
+	&__rou {		
+		box-sizing:content-box;
+		padding: 140px 15px;
+		display: flex;
+	   width: 100%;
+		justify-content: space-between;
+
+	}
+	&__colums {
+		width: 460px;
+		height: 580px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&_banan { background: url("../img/Food/Juse.jpg") 0 0/ contain no-repeat; 		
+		}
+
+		&_cucember {background: url("../img/Food/coocember.jpg") 0 0/ contain no-repeat; 		
+		}
+
+		&_cookis {background: url("../img/Food/cookes.jpg") 0 0/ contain no-repeat; 
+		}
+	}
+
+	&__button {
+	}
+}
+
+.button-white {
+	max-width: 340px;	
+	max-height: 95px;
+	padding:25px 0px;
+	display:inline-block;	
+	
+
+	&__text {
+		padding: 30px 79px;
+		font-family: "Roboto";
+		background: #FFFFFF;		
+		color: #274C5B;
+		font-weight: 700;
+		font-size :25px;
+		line-height: 35px;		
+		text-align: center;		
+		border-radius: 20px;
+	}
+}
+
+/*______________________NEWS________________*/
+
+.nevs {
+
+	&__container {
+		padding: 120px 0;
+	}
+
+	&__top-rou {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__title {
+	}
+
+	&__button {
+		align-self: flex-end;
+	}
+
+	&__bottom-rou {
+		margin-top:100px ;
+		box-sizing:content-box;		
+		display: flex;
+	   width: 100%;
+		justify-content: space-between;
+	}
+
+	&__colums {
+		width: 670px;
+		height: 517px;		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__bg {
+		
+
+		&_salat {background: url("../img/News/Salat.jpg") 0 0/ contain no-repeat;
+			
+		}
+
+		&_tomat {background: url("../img/News/Tomato.jpg") 0 0/ contain no-repeat;
+		}
+	}
+
+	&__item {
+		margin-bottom: -310px;
+	}
+}
+
+
+.itemNevs {
+	box-sizing: border-box;
+	width: 620px;
+	height: 337px;
+background: #FFFFFF;
+box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.14);
+border-radius: 30px;
+padding: 50px;
+
+
+	&__name {
+		background: url("../img/News/Avatar.svg") 0 0/ contain no-repeat;		
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 23px;		
+		letter-spacing: 0.36px;		
+		padding-left: 26px;
+		
+	}
+
+	&__title {
+		margin-top: 25px;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 140%;		
+		letter-spacing: 0.36px;				
+	}
+
+	&__text {
+		margin-top: 35px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 180%;
+		letter-spacing: 0.36px;
+		color: #525C60;
+		max-width: 400px;
+	}
+
+	&__link {
+		background: url("../img/News/Arou.svg") right/ contain no-repeat;		
+		width: 140px;
+		display: inline-block;	
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 140%;		
+		letter-spacing: 0.36px;	
+		margin-top: 25px;	
+
+		 &:visited{
+			 color: #274C5B;			 
+		 }
+		}
+}
+
+/*_________________SABMIT_________________*/
+
+
+.subscribe {
+
+	&__contaner {
+	}
+
+	&__form {
+		
+	}
+
+	&__bg {
+		margin: 0 auto;		
+		width: 1380px;
+		height: 320px;	
+		background: url("../img/Sab/BG.jpg") 0 0/ contain no-repeat;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 70px;
+
+	}
+
+	&__text {
+		display: inline-block;
+		width: 380px;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 50px;
+		line-height: 60px;		
+		letter-spacing: 0.36px;
+		text-transform: capitalize;		
+		color: #FFFFFF;
+	}
+
+	&__fild {
+		border-radius: 16px;
+		padding: 25px 100px 25px 30px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 29px;	
+		letter-spacing: 0.36px;		
+		color: #525C60;
+	}
+
+	&__button {	
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 29px;	
+		width: 197px;					
+		letter-spacing: 0.36px;		
+		color: #FFFFFF;				
+		background:url(../img/Sab/ARROU.svg) 150px 27px no-repeat;
+		background-color: #274C5B;		
+		padding-right: 35px;
+	}
+	&__form{
+
+	}
+}
 
 /*______________Podval______________________*/
+
 .footer {
 }
 

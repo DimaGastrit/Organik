@@ -225,6 +225,12 @@ html, body {
   border-radius: 16px;
 }
 
+.button_white {
+  color: #274C5B;
+  background: #FFFFFF;
+  border: 1px solid #274C5B;
+}
+
 .button_yllou {
   background: #EFD372;
   border: 1px solid #EFD372;
@@ -737,6 +743,365 @@ html, body {
 .offer__button {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+/*_______+
+.windows {
+
+	&__container {
+	}
+
+	&__items {
+	}
+
+	&__items-bottom {
+	}
+
+	&__items-img {
+	}
+
+	&__items-description {
+	}
+
+	&__prais {
+	}
+
+	&__old-prais {
+	}
+
+	&__nev-prais {
+	}
+
+	&__stars {
+	}
+}
+*/
+/*___________________ECCO_______________________*/
+.eccofrendli {
+  background: #FFFFFF;
+}
+
+.eccofrendli__container {
+  max-width: 1440px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.leftSaid__img {
+  float: left;
+  z-index: 1;
+}
+
+.rightSaid {
+  max-height: 704px;
+}
+
+.rightSaid__column {
+  position: relative;
+  max-width: 720px;
+  max-height: 635px;
+  height: 100%;
+  width: 100%;
+  margin: 39px 0px 39px -60px;
+  z-index: 40;
+  background: #FFFFFF;
+  border-radius: 30px 0px 0px 30px;
+  padding-left: 65px;
+}
+
+.rightSaid__title {
+  padding-top: 35px;
+}
+
+.rightSaid__list {
+  padding-bottom: 45px;
+}
+
+.rightSaid__list-title {
+  padding-top: 9px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #274C5B;
+}
+
+.rightSaid__list-title:first-child {
+  padding-top: 25px;
+}
+
+.rightSaid__list-subtitle {
+  padding-top: 4px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+
+/*______________________FOOD____________________*/
+.food {
+  background: #EFF6F1;
+}
+
+.food__container {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+.food__rou {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 140px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.food__colums {
+  width: 460px;
+  height: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.food__colums_banan {
+  background: url("../img/Food/Juse.jpg") 0 0/contain no-repeat;
+}
+
+.food__colums_cucember {
+  background: url("../img/Food/coocember.jpg") 0 0/contain no-repeat;
+}
+
+.food__colums_cookis {
+  background: url("../img/Food/cookes.jpg") 0 0/contain no-repeat;
+}
+
+.button-white {
+  max-width: 340px;
+  max-height: 95px;
+  padding: 25px 0px;
+  display: inline-block;
+}
+
+.button-white__text {
+  padding: 30px 79px;
+  font-family: "Roboto";
+  background: #FFFFFF;
+  color: #274C5B;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/*______________________NEWS________________*/
+.nevs__container {
+  padding: 120px 0;
+}
+
+.nevs__top-rou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nevs__button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.nevs__bottom-rou {
+  margin-top: 100px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nevs__colums {
+  width: 670px;
+  height: 517px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nevs__bg_salat {
+  background: url("../img/News/Salat.jpg") 0 0/contain no-repeat;
+}
+
+.nevs__bg_tomat {
+  background: url("../img/News/Tomato.jpg") 0 0/contain no-repeat;
+}
+
+.nevs__item {
+  margin-bottom: -310px;
+}
+
+.itemNevs {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 620px;
+  height: 337px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.14);
+  border-radius: 30px;
+  padding: 50px;
+}
+
+.itemNevs__name {
+  background: url("../img/News/Avatar.svg") 0 0/contain no-repeat;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.36px;
+  padding-left: 26px;
+}
+
+.itemNevs__title {
+  margin-top: 25px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: 0.36px;
+}
+
+.itemNevs__text {
+  margin-top: 35px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.36px;
+  color: #525C60;
+  max-width: 400px;
+}
+
+.itemNevs__link {
+  background: url("../img/News/Arou.svg") right/contain no-repeat;
+  width: 140px;
+  display: inline-block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.36px;
+  margin-top: 25px;
+}
+
+.itemNevs__link:visited {
+  color: #274C5B;
+}
+
+/*_________________SABMIT_________________*/
+.subscribe__bg {
+  margin: 0 auto;
+  width: 1380px;
+  height: 320px;
+  background: url("../img/Sab/BG.jpg") 0 0/contain no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 70px;
+}
+
+.subscribe__text {
+  display: inline-block;
+  width: 380px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.subscribe__fild {
+  border-radius: 16px;
+  padding: 25px 100px 25px 30px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+
+.subscribe__button {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  width: 197px;
+  letter-spacing: 0.36px;
+  color: #FFFFFF;
+  background: url(../img/Sab/ARROU.svg) 150px 27px no-repeat;
+  background-color: #274C5B;
+  padding-right: 35px;
 }
 
 /*______________Podval______________________*/
