@@ -1105,4 +1105,133 @@ html, body {
 }
 
 /*______________Podval______________________*/
+.footer__container {
+  margin-top: 150px;
+}
+
+.footer__rou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__colums_title {
+  text-align: right;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+  color: #274C5B;
+}
+
+.footer__colums_title-item {
+  margin-top: 40px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: right;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+
+.footer__colums_subtitle {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+
+.footer__colums_center {
+  max-width: 670px;
+  width: 670px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: solid 1px #D5D5D5;
+  border-left: solid 1px #D5D5D5;
+}
+
+.footer__colums_text {
+  max-width: 567px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+
+.footer__colums_iconImg {
+  padding-left: 15px;
+}
+
+.footer__colums_right {
+  text-align: left;
+}
+
+.footer__colums_title-right {
+  padding-bottom: 20px;
+}
+
+.footer__colums_items {
+  padding-bottom: 24px;
+}
+
+.footer__colums_listLink {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+
+.footer__subfooter {
+  margin-top: 70px;
+}
+
+.subfooter_autor {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 180% */
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+
+.subfooter__rou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 45px;
+}
+
+/*__________________PODBAJI PODBAJIA =) ______________*/
 /*# sourceMappingURL=style.css.map */
