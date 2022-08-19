@@ -44,6 +44,9 @@ html,body{
 	font-family: 'Roboto';
 	background : #fafafa;
 }
+body._lock{
+	overflow: hidden;
+}
 /*____________________TEXHO BLOK________________*/
 .wrapper{
 	min-height: 100%;
@@ -70,24 +73,36 @@ html,body{
 /*____________________Header________________*/
 
 .header {	
-	    max-height: 152px;	
+		padding-top: 15px;	
+	    position: fixed;
+		 top: 0;
+		 left: 0;
+		 width: 100%;
+		 z-index: 125;
+		 background-color:#ffffff;
+		 height: 100px;
 
 		&__container {	
-			margin-top:40px;			
-			align-items:center;			
-			height: 72px;
-			display: grid;	
-			grid-template-columns:minmax(200px,300px) minmax(365px,600px)  auto ;				
+			max-width: 1200px;
+			margin: 0 auto;			
+			display: flex;
+			padding: 0px 30px ;
+			align-items: center;
+			justify-content: space-between;
+			min-height: 70px;
+		
+		} 
+		&__logo{	
+			width: 200px;
+			& img{
+				width: 100%;
+			}
 		}
-
-		&__logo {
-			justify-self: start;
-				}
-		&__nav {	
-		}
-		&__cart {	
-			justify-self: end;				
-		}
+		&__nav {
+			align-self:center;
+			flex: 1 1 75%;
+			}
+		&__cart {}
 }
 .logo {
 		&__link {
@@ -96,19 +111,26 @@ html,body{
 		}
 }
 .nav {
-		&__rov {
-			display: flex;
-			justify-content: flex-start;			
-		}
 
+	padding: 0 15px;
+	  	&__icon{
+		display: none;
+		}
+		&__body{	}
+		&__list {
+			justify-content: center;
+						
+			height: 33px;			
+		}
 		&__item {	
-	font-style: normal;
-	font-weight: 400;
-	font-size: 19px;
-	line-height: 32px;
-	letter-spacing: 0.36px;			
+			height: 33px;		
 		}
 	&__link {
+		font-style: normal;
+		font-weight: 400;
+		font-size: calc(9px + 10 * (100vw / 1380));
+		line-height: 32px;
+		letter-spacing: 0.36px;		
 		color: #274C5B;;
 	}
 	&__link:hover {
@@ -118,10 +140,9 @@ html,body{
 		margin: 0 40px 0 0;
 	}
 	&__item:last-child{
-		margin: 0  0 0 20px;
+		margin: 0  0 0 0;
 	}
 }
-
 .cart {
 	
 
@@ -150,9 +171,8 @@ html,body{
 .page {
 	flex: 1 1 auto ;
 
-		&__welcome {
-		margin-top:40px;
-		max-width: 100%;				
+		&__welcome {		
+					
 	}
 		&__advertisi{
 
@@ -184,25 +204,25 @@ html,body{
 		font-family: 'Yellowtail';
 		font-style: normal;
 		font-weight: 400;
-		font-size: 36px;
+		font-size: calc(20px + 15 * (100vw / 1380));
 		line-height: 180%;
 		letter-spacing: 0.36px;
 		text-transform: capitalize;
 		color: #7EB693;
-	}
-	&__subtitle {
+
+		
+	}	&__subtitle {
+					
 		font-family: 'Roboto';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 45px;
+		font-size: calc(30px + 15 * (100vw / 1380));
 		line-height: 130%;
 		letter-spacing: 0.36px;
 		text-transform: capitalize;
 		color: #274C5B;
-
 		&_waet{
 			color: #FFFFFF;
-
 		}
 	}
 	&__text {
@@ -210,7 +230,7 @@ html,body{
 		font-family: 'Open Sans';
 		font-style: normal;
 		font-weight: 400;
-		font-size: 18px;
+		font-size: calc(12px + 6 * (100vw / 1380));
 		line-height: 180%;
 		letter-spacing: 0.36px;
 		color: #525C60;	
@@ -218,7 +238,7 @@ html,body{
 }
 /*_________________buttonS__________*/
 .button {
-	max-width: 300px;	
+	max-width: 220px;	
 	max-height: 82px;
 	padding:25px 0px;
 	display:inline-block;
@@ -226,11 +246,8 @@ html,body{
 	&_white{
 		color: #274C5B;
 		background: #FFFFFF;
-		border: 1px solid #274C5B;
-		
-			
+		border: 1px solid #274C5B;			
 	}
-
 	&_yllou{
 		background: #EFD372;
 		border: 1px solid #EFD372;
@@ -259,35 +276,31 @@ html,body{
 	
 }
 /*_______WELCOME_____________________*/
-
-.welcome {
-
-	background: url("../img/Welcome/BackGround.png") 0 0/ 100% auto  no-repeat;   	
-	&__container {
+.welcome {	
+	background: url("../img/Welcome/BackGround.png") 0 0 / cover  no-repeat;	  	
+	&__container {		
+		
 	}
 	&__rou {
 		padding:225px 15px 285px 15px ;
-		max-width: 525px;
-	}
-	&__text {
-		font-family:'Yellowtail';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 36px;
-		line-height: 180%;		
-		letter-spacing: 0.36px;
-		text-transform: capitalize;		
-		color: #7EB693;
-		padding: 15px 0;
+		max-width: 550px;		
 	}
 	&__title {		
+		padding: 15px 0;
+	}
+	&__subtitle {
+		max-width: 700px;			
+		font-family: 'Roboto';
+		font-style: normal;
 		font-weight: 700;
-		font-size: 70px;
-		line-height: 125%;
-		letter-spacing: 0.36px;			
+		font-size: calc(35px + 35 * (100vw / 1380));
+		line-height: 120%;		
+		letter-spacing: 0.36px;	
+		text-transform: none;				
 	}
 
 	&__button {
+		display: block;
 		margin-top: 35px; 
 	}
 }
@@ -296,37 +309,39 @@ html,body{
 .advertisi {
 	&__conteiner {		
 	}
-	&__rou {
-		margin: 140px 0;
+	&__rou {		
+		margin: 8% 0;
 		display: flex;		
 	   width: 100%;
 		justify-content: space-between;		
 	}
-	&__colums {			
+	&__colums {	
+		margin: 0 5px;		
 		width:665px ;
 		height: 378px;		
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: flex-start;
+		
 		&_banan {	
 			color: #FFFFFF;			
-			background: url("../img/Advertisi/banan.png") 0 0/ contain no-repeat; 			
+			background: url("../img/Advertisi/banan.png") center / contain no-repeat; 			
 		}
 		&_aprikot {			
-			background: url("../img/Advertisi/aprikot.png") 0 0/ contain   no-repeat;				
+			background: url("../img/Advertisi/aprikot.png") center/ contain   no-repeat;				
 		}
 	}
 	&__texts {
 		padding-left: 53px;
-		max-width: 320px;		
+		max-width: 370px;	
+		
 	}
 
 	&__title {
 		font-family: 'Yellowtail';
 		font-style: normal;
 		font-weight: 400;
-		font-size: 36px;
+		font-size: calc(16px + 20 * (100vw / 1380));
 		line-height: 180%;		
 		letter-spacing: 0.36px;			
 	}
@@ -335,9 +350,12 @@ html,body{
 		font-family: 'Roboto';
 		font-style: normal;
 		font-weight: 400;
-		font-size: 40px;
+		font-size: calc(18px + 22 * (100vw / 1380));
 		line-height: 130%;
 		letter-spacing: 0.36px;
+		
+	
+		
 	}
 }
 /*______________about ass______________________*/
@@ -345,23 +363,35 @@ html,body{
 		background: #F9F8F8;
 		padding: 80px 0;
 
-	&__conteiner {
+	&__conteiner {			
+		max-width: 1450px;			
 		display: flex;
-		justify-content: center;
-	}
-	&__img {		
-		padding: 0 20px;
-	}
-
-	&__artik {
+		justify-content:end;
+		margin: 0 auto;
+		position: relative;
 		
+	}
+	&_img{			
+		position: absolute;
+		width: 100%;
+	  	height: 100%;
+	 	top: 0;
+	  	left: -10%;		
+	}
+	&__artik {			
 		}	
 	&__button {
-		margin-top: 50px;
+		margin-top:50px ;
 	}
+	
 }
 
 .artik {
+	z-index: 5;
+	padding: 5px;
+	&__bg{
+
+	}
 
 	&__rous {
 		margin-top: 30px;
@@ -369,13 +399,10 @@ html,body{
 		flex-direction: column;
 		justify-content: space-between;		
 		max-width: 680px;		
-		height: 238px;
-	
+		height: 238px;	
 	}
-	&__rou {	
-			
-		display: flex;		
-
+	&__rou {				
+		display: flex;	
 	}
 	&__rou-img {
 		float: left;		
@@ -384,13 +411,14 @@ html,body{
 		padding-left: 20px;
 		}
 	&__text-title {
-			font-family: 'Roboto';
+		font-family: 'Roboto';
 		font-style: normal;
 		font-weight: 400;
 		font-size: 25px;
 		line-height: 140%;		
 		letter-spacing: 0.36px;		
 		color: #274C5B;
+		max-height: 100%;
 	}
 
 	&__text-subtitle {
@@ -402,6 +430,7 @@ html,body{
 		line-height: 180%;	
 		letter-spacing: 0.36px;		
 		color: #525C60;
+		max-height: 100%;
 	}
 }
 
@@ -1302,26 +1331,282 @@ padding: 50px;
 
 
 /*______MEDIA ____________________*/
-@media screen and (max-width: 960px) {
-	body {
-	background-color: red;
+@media  (max-width: 1400px) {
+	.welcome {	
+		background: url("../img/Welcome/BackGround.png") 60% / cover  no-repeat;
+	}	
+	.about {
+		
+	&__conteiner {			
+			
+	}
+	&_img{		
+		opacity: 0.8;	
+	}
+	&__artik {			
+		}	
+	&__button {		
+	}	
+}
+}
+
+@media  (max-width: 960px) {
+
+	.nav {
+		&__item:not(:last-child){
+			margin: 0 15px 0 0;
+		}
+		
+	}
+	.advertisi {
+
+		&__rou{	
+		flex-wrap: wrap;
+		justify-content: center;	
+		
+			
+		}	
+		&__colums{
+			margin-top:25px;
+			padding: 15px 15px;
+			width:665px ;
+		   height: 378px;		
+		}			
+	}
+	.about {
+		
+		&__conteiner {			
+				
+		}
+		&_img{	
+			left: 0;	
+			opacity: 0.8;	
+		}
+		&__artik {			
+			}	
+		&__button {		
+		}	
+	}
+	
+}
+@media  (max-width: 767px) {
+	.button {
+	max-width: 200px;	
+	max-height: 70px;
+	
+	&__arrou {
+		padding:0 9px  0 10px;
+
 	}
 	}
-	@media screen and (max-width: 768px) {
-	body {
-	background-color: orange;
+
+	.nav {
+		&__icon{
+			left: 35%;
+			
+			}	
+
 	}
+
+.artik {	
+	
+	
+	&__text {	
+		padding-left: 20px;
+		}
+	&__text-title {
+		
+		font-size: 23px;
+		color: #172c35;		
 	}
-	@media screen and (max-width: 550px) {
-	body {
-	background-color: yellow;
+
+	&__text-subtitle {		
+		font-size: 15px;
+		color: #172c35;	
 	}
+	&__rou-img {
+		width: 20%;
 	}
-	@media screen and (max-width: 320px) {
-	body {
-	background-color: green;
+}	
+	
+	.button {		
+		padding:20px 0px;		
 	}
+	.title {
+		&__title {
+			
+			font-size: calc(20px + (15 + 15 * 0.7 ) * ((100vw - 375px) / 1380));
+				}
+		&__subtitle {		
+			font-size: calc(30px + (15 + 15 * 0.7 ) * ((100vw - 375px) / 1380));				
+	
+			&_waet{
+				color: #FFFFFF;
+	
+			}
+		}
+		&__text {
+			max-width: 680px;
+			font-family: 'Open Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: calc(14px + (4 + 4 * 0.7)* ((100vw - 375px) / 1380));
+					}
 	}
+	.welcome{
+		&__subtitle{
+			font-size:calc(35px + (35 + 35 * 0.7 )* ((100vw - 375px) / 1380));
+		}
+	}
+	.cart{		
+		&__img {
+			position: fixed;
+			overflow: visible;
+		}			
+	}	
+
+	.nav{
+		&__body{
+			position: fixed;
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 100%;
+			background: #eeee;
+			padding: 100px 30px 30px 30px;
+			transition: left 0.3s ease 0s ;
+			overflow: auto;		
+		}
+		
+		&__body::before{
+			content: "";
+			position: fixed;
+			width: 100%;
+			top: 0;
+			left: 0;
+			height: 100px;		
+			background: url("../img/Nav/logo2.png")  10% 0% / contain no-repeat;
+			background-color: #274C5B;
+				
+			
+		}
+		&__body._active{
+			left: 0 ;
+		}
+		&__list > li{
+			margin:0px 0px 30px 0px ;
+		}
+		&__list > li:last-child{
+			margin-bottom: 0;
+		}
+		&__link{
+			font-size: 24px ;
+		}
+		&__icon{	
+				
+			z-index: 5;
+			display: block;
+			position: relative;
+			width: 30px;
+			height: 18px ;
+			cursor: pointer;			
+		}
+		&__icon._active{}
+
+		&__icon._active span{
+			transform:  scale(0) translate(0px,-50%);
+		}
+		&__icon._active::before{
+			top: 50%;
+			transform: rotate(-45deg) translate(0px,-50%);
+		}
+		&__icon._active::after{
+			bottom: 50%;
+			transform:  rotate(45deg) translate(0px,50%);
+		}
+		
+		&__icon span,		
+		&__icon::before,
+		&__icon::after{
+			left: 0;			
+			position: absolute;
+			height: 10%;
+			width: 100%;
+			transition: all 0.3s ease 0s ;
+			background-color: #EFD372;			
+		}	
+		&__icon::before,
+		&__icon::after{
+			content:"";
+		}	
+		&__icon::before{
+			top:0;
+		}
+		&__icon::after{
+			bottom: 0;
+		}	
+		&__icon span{
+			top:50%;
+			transform: scale(1) translate(0px,-50%);		
+		}			
+	}
+
+}
+@media  (max-width: 550px) {
+	.advertisi{
+		&__rou {
+		flex-wrap: wrap;
+		justify-content: center;
+		height: 700px;	
+		align-items: flex-start;	
+	
+			
+		}	
+		&__colums{		
+			
+			padding: 15px 15px;
+			width:400px ;
+		   height: 200px;		
+
+		}
+
+	}
+
+	.artik {	
+		&__text {	
+			padding-left: 20px;
+			}
+		&__text-title {
+			
+			font-size: 22px;
+			color: #172c35;		
+		}
+	
+		&__text-subtitle {		
+			font-size: 14px;
+			color: #172c35;	
+		}
+		&__rou-img {
+			width: 18%;
+		}
+	}
+}		
+@media (max-width: 320px) {}
+@media  (min-width: 767px) {
+
+
+	.nav{
+			&__list{
+			display: flex;
+			align-items: center;
+		}
+			&__link>li{
+			padding: 10px 0;
+		}
+	}	
+
+	
+}
 
 /*__________________PODBAJI PODBAJIA =) ______________*/
 
