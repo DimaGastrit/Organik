@@ -481,8 +481,10 @@ body._lock {
 .galeri {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(390px, 450px) minmax(390px, 450px) minmax(390px, 450px);
-      grid-template-columns: minmax(390px, 450px) minmax(390px, 450px) minmax(390px, 450px);
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   justify-items: center;
   gap: 30px 20px;
 }
@@ -519,6 +521,11 @@ body._lock {
   color: #FFFFFF;
 }
 
+.windows__items-img {
+  display: block;
+  width: 100%;
+}
+
 .windows__items-description {
   font-family: 'Roboto';
   font-style: normal;
@@ -531,13 +538,12 @@ body._lock {
 }
 
 .windows__prais {
-  margin: 10px 30px 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 87%;
 }
 
@@ -1268,6 +1274,14 @@ body._lock {
 
 /*______MEDIA ____________________*/
 @media (max-width: 1400px) {
+  .windows__old-prais {
+    letter-spacing: 0.20px;
+    font-size: 15px;
+  }
+  .windows__nev-prais {
+    letter-spacing: 0.20px;
+    font-size: 15px;
+  }
   .welcome {
     background: url("../img/Welcome/BackGround.png") 60%/cover no-repeat;
   }
