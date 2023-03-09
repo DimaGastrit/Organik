@@ -236,26 +236,4 @@ html, body {
 }
 
 /*______________Podval______________________*/
-#footer {
-    background: #665;
-    color: #fff;
-    font-size: 70%;
-    padding: 5px; clear : both;
-    }
-    #footer a {
-        color: #ff0;
-        }
-        
-        #footer a:hover {
-        color: #f00;
-        }
-        #footer p {
-            padding: 2px;
-            text-align: center;
-            }
-            
-            .clearfloat {
-            
-            clear: both;
-            }
-
+/*# sourceMappingURL=style.css.map */
