@@ -116,8 +116,7 @@ body._lock{
 		}
 		&__body{	}
 		&__list {
-			justify-content: center;
-						
+			justify-content: center;						
 			height: 33px;			
 		}
 		&__item {	
@@ -141,8 +140,7 @@ body._lock{
 		margin: 0  0 0 0;
 	}
 }
-.cart {
-	
+.cart {	
 
 	&__rov {
 		border: 1px solid #D4D4D4;   
@@ -235,25 +233,26 @@ body._lock{
 	}
 }
 /*_________________buttonS__________*/
-.button {
-	max-width: 220px;	
-	max-height: 82px;
-	padding:25px 0px;
-	display:inline-block;
+.button {	
+	padding:0px 0px;	
 	border-radius: 16px;	
+	width: 240px;	
+	background: url('../img/AboutAss/arou.svg') 120% /  50% 50% no-repeat;
+	padding: 20px 5px;
+	display: block;
 	&_white{
 		color: #274C5B;
-		background: #FFFFFF;
+		background-color: #FFFFFF;
 		border: 1px solid #274C5B;			
 	}
 	&_yllou{
-		background: #EFD372;
+		background-color: #EFD372;
 		border: 1px solid #EFD372;
 		color: #274C5B;
 	}
 	&_grin{
 		color: #FFFFFF;
-		background: #274C5B;
+		background-color: #274C5B;
       border: 1px solid #274C5B;
 	}
 	&__grin a:visited {
@@ -266,10 +265,11 @@ body._lock{
 		line-height: 168%;		
 		letter-spacing: 0.36px;
 		text-transform: capitalize;		
-		padding-left: 20px;
+		padding-left: 20px;			
 		}
 	&__arrou {
-		padding:0 9px  0 20px;
+		padding:0;
+		display: none;
 	}
 	
 }

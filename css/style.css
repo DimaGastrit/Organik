@@ -242,28 +242,29 @@ body._lock {
 
 /*_________________buttonS__________*/
 .button {
-  max-width: 220px;
-  max-height: 82px;
-  padding: 25px 0px;
-  display: inline-block;
+  padding: 0px 0px;
   border-radius: 16px;
+  width: 240px;
+  background: url("../img/AboutAss/arou.svg") 120%/50% 50% no-repeat;
+  padding: 20px 5px;
+  display: block;
 }
 
 .button_white {
   color: #274C5B;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: 1px solid #274C5B;
 }
 
 .button_yllou {
-  background: #EFD372;
+  background-color: #EFD372;
   border: 1px solid #EFD372;
   color: #274C5B;
 }
 
 .button_grin {
   color: #FFFFFF;
-  background: #274C5B;
+  background-color: #274C5B;
   border: 1px solid #274C5B;
 }
 
@@ -282,7 +283,8 @@ body._lock {
 }
 
 .button__arrou {
-  padding: 0 9px  0 20px;
+  padding: 0;
+  display: none;
 }
 
 /*_______WELCOME_____________________*/
